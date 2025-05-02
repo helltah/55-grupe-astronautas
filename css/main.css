@@ -1,47 +1,51 @@
 body{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
-    float: left;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
      width: 800px; 
-    margin-left: calc(50% - 400px);
-    margin-top: 30px ;
 }
 
 header > img{
-    float:left
+    
+    height: 40px;
 }
 
 nav{
-    float: right;
-   
+    display: flex;
+    gap: 30px;
 }
 
 nav > a{
     color: #333 ;
     text-decoration: none;
-    margin-left: 30px; 
+    font-size: 20px;
+    
 }
 
-nav a:first-child{
-    margin: 0;
+nav > a:hover{
+    text-decoration: underline;
+    color: grey;
 }
 
 main {
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 800px;
-    margin-left: calc(50% - 400px);
-    margin-top: 60px;
-    margin-bottom: 40px;
 }
 
 main > div{
-    float: left;
     width: 40%;
-    margin-top: 30px ;
   }
   
 h1 {
@@ -51,7 +55,7 @@ h1 {
     }
 
 div > p {
-    margin: 0;
+   margin: 0;
     margin-bottom: 30px;
 }
 
@@ -66,11 +70,12 @@ div > p:last-of-type {
 }
 
 main > div > div{
-    display: inline-block;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 main a {
-    float: left;
     background-color: #55337A;
     color: #fff;
     padding: 16px;
@@ -86,35 +91,39 @@ main a {
 main a:last-child {
     background-color: #fff;
     color: #55337A;
-    margin-left: 30px;
 }
 
-main > img {
+main a:hover {
+    background-color: #fff ;
+    color: #554485 ;
+    cursor: pointer;
+}
+
+main a:last-child:hover{
+    background-color: #554485;
+    color: #fff;
+}
+
+.main-img {
     width: 60%;
-    float: left;
+    
 }
 
 footer {
-    float: left;
+    display: flex;
+    justify-content: space-between;
     width: 800px;
-    margin-left: calc(50% - 400px);
     background-color: lightgray;
   }
 
-footer > div{
-    float: left;
+.socials{
+
 }
 
-a {
-    text-decoration: none;
-    color: #333;
-    margin-left: 30px;    
-}        
-a:first-child {
+.socials > .icon {
+
+}
+
+.copyright {
     margin: 0;
 }
-
-  footer > p {
-    margin: 0 ;
-    float: right;
-  }
