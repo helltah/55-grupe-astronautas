@@ -67,12 +67,15 @@ div > p:first-of-type{
 
 div > p:last-of-type {
     font-size: 20px;
+
 }
 
 main > div > div{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    font-weight: bold;
+
 }
 
 main a {
@@ -86,11 +89,13 @@ main a {
     text-transform: uppercase;
     border-radius: 30px;
     border: 4px solid#55337A;
+    text-decoration: none;
 }
 
 main a:last-child {
     background-color: #fff;
     color: #55337A;
+    text-decoration: none;
 }
 
 main a:hover {
@@ -113,16 +118,31 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 800px;
-    background-color: lightgray;
+  }
+
+  .sub-title::after {
+    content: '';
+    display: block;
+    background-color:#55337A ;
+    height: 4px;
+    width: 100px;
   }
 
 .socials{
-
+display: flex;
+gap: 24px;
 }
 
 .socials > .icon {
-
+    font-size: 20px;
+    text-decoration: none;
+    color: #c5c5c5;
 }
+
+.socials > .icon:hover {
+    color: lightgrey;
+}
+
 
 .copyright {
     margin: 0;
